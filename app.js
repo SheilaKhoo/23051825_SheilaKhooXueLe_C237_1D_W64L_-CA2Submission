@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql2');
 const multer = require('multer');
-const PORT = 3000;
+const PORT = 80;
 const YOURNAME = 'User'; // Default name of user since we don't have user accounts yet
 const SALAD_LIMIT = 10; // Maximum number of dreams that can be chained into a DreamSalad
 
