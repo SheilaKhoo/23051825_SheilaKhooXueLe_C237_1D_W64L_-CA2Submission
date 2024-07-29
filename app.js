@@ -9,10 +9,10 @@ const SALAD_LIMIT = 10; // Maximum number of dreams that can be chained into a D
 
 // MySQL Connection
 const connection = mysql.createConnection({
-    host: 'db4free.net',
+    host: 'dreamsalad.c5uau8qu2i7l.ap-southeast-1.rds.amazonaws.com',
     user: 'sheilakhooxuele',
     password: 'f%rgos#$wgvh$RGLSQWfg==',
-    database: 'dreamsalad'
+    database: 'dreamsaladapp'
 });
 
 connection.connect((err) => {
