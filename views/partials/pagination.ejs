@@ -1,0 +1,20 @@
+<!-- Pagination -->
+<div class="px-2 pt-4 pb-4">
+    <nav>
+        <ul class="pagination">
+            <li class="page-item disabled my-dreams-previous">
+                <a class="page-link">Previous</a>
+            </li>
+            <% for (let i = 0; i < ((-1) * (Math.floor(((-1) * returnList.length) / 10))); i++) { // Round UP to (no. of dreams / 10) to get no. of pages needed %>
+                <% if (i == 0) { %>
+                    <li class="my-dreams-page-item page-item active"><span class="page-link">1</span></li>
+                <% } else { %>
+                    <li class="my-dreams-page-item page-item"><a class="page-link" href="#"><%= i+1 %></a></li>
+                <% } %>
+            <% } %>
+            <li class="page-item my-dreams-next">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>

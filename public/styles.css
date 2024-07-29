@@ -1,0 +1,231 @@
+/* MAIN LOGO OF WEBSITE */
+/* Main logo of the site */
+#main-logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+/* Main logo of the site + Title */
+#main-logo-wrap {
+    padding-left: 20px;
+    text-align: center;
+}
+
+/* NAVBAR LINKS */
+/* Link hover color change */
+.nav-link {
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.nav-link:hover {
+    color: rgb(118, 253, 253);
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+/* Text size reduces at a certain screen width */
+@media (max-width: 650px) {
+    .nav-link {
+        font-size: 15px;
+    }
+}
+
+/* HTML */
+/* Change background color and image */
+html {
+    background-color: black;
+}
+
+/* MAIN CONTENT */
+.main-wrap {
+    background-color: black;
+    color: white;
+}
+.main-body {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.footer-body {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* DREAM DISPLAY ON MAIN PAGE */
+.dream-header {
+    background-color: rgb(15, 15, 15);
+    color: orange;
+    font-size: 15px;
+}
+/* Variant for My DreamSalad page */
+.my-dreams-dream-header {
+    background-color: rgb(15, 15, 15);
+    font-weight: bold;
+}
+.my-dreams-dream-header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Timestamp for each dream */
+.timestamp {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.dream-body {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    /* Fixing some weird clipping issues with the card */
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* SHEEP JUMPING BUTTON */
+.sheep-jumping {
+    max-height: 80px;
+    border-radius: 20px;
+}
+
+/* AUTHORS LIST */
+.authorsList {
+    color: orange;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* STORY TITLE */
+.story-title {
+    color: orange;
+}
+
+/* STORY CONTENT */
+.story-content {
+    margin: 30px 0px 30px 0px;
+}
+
+/* BACK BUTTON */
+.back-button {
+    max-height: 160px;
+}
+
+/* 404 NOT FOUND */
+.not-found {
+    display: flex;
+    justify-content: center;
+}
+.not-found-pic {
+    max-height: 1000px;
+    max-width: 1000px;
+}
+.not-found-text {
+    text-align: center;
+    color: rgb(177, 0, 0);
+}
+
+/* SIDEBAR */
+.sidebar {
+    box-sizing: border-box;
+}
+.sidebar-inner {
+    display: flex;
+    flex-direction: column;
+}
+.new-dream-button,.FAQ-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    min-width: 150px;
+    margin: 0px 0px 20px 0px;
+}
+.sidebar-inner-alternate {
+    display: none;
+}
+@media (max-width: 575px) {
+    .sidebar-inner-alternate {
+        display: block;
+    }
+    .sidebar-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .new-dream-button,.FAQ-button {
+        max-width: 150px;
+        min-width: 50px;
+        margin: 0px 20px 0px 0px;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+/* SUBMIT BUTTON COLOR CHANGE WHEN HOVER */
+.submit-button {
+    background-color: orange;
+}
+.submit-button:hover {
+    background-color: rgb(255, 190, 69);
+}
+
+/* PAGINATION */
+.page-link {
+    color: rgb(180, 99, 0);
+}
+.page-item.active>span {
+    background-color: orange;
+    color: white;
+}
+
+/* SLIDER / RANGE COLOR */
+#dreamsalad-length::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    background: orange;
+}
+#dreamsalad-length::-moz-range-thumb {
+    background: orange;
+}
+
+/* To ensure footer shows at the bottom of page */
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: black;
+}
+header {
+    min-height: 50px;
+}
+footer {
+    min-height: 50px;
+}
+
+/* FAQ PAGE */
+.accordion-button {
+    background-color: rgb(44, 44, 44);
+    color: orange;
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgb(80, 80, 80);
+    color: orange;
+}
+.accordion-body {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 18px;
+}
+/* Arrow color */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFA500'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFA500'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
