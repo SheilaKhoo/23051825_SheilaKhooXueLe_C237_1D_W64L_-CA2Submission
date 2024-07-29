@@ -14,6 +14,7 @@ const connection = mysql.createConnection({
     password: 'f%rgos#$wgvh$RGLSQWfg==',
     database: 'dreamsalad'
 });
+
 connection.connect((err) => {
     if (err) {
         console.error('Error connecting to MySQL:', err);
